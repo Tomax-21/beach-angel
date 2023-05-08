@@ -116,6 +116,9 @@ a.active, a:hover {
         /*align-items: start  !important;*/
         
     }
+    .titre1 {
+        margin-bottom: 15px;
+    }
     .partie1 img {
         height: auto !important;
         width: 50% !important;
@@ -164,7 +167,7 @@ a.active, a:hover {
     .titrePrincipal2 {
 
         margin-left: 8% !important;
-        padding-top: 8vh !important;
+        padding-top: 9vh !important;
         width: 12% !important;
 
     }
@@ -186,7 +189,7 @@ a.active, a:hover {
         width: 30% !important;
     }
     .modele3d {
-       
+        height: 400px !important;
         width: 140% !important;
     
     }
