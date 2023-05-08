@@ -223,7 +223,7 @@ a.active, a:hover {
     }
     .checkbtn {
         display: block;
-        margin-left: 15px;
+        margin-left: 45px !important;
         color: white;
     }
 
