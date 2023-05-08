@@ -87,7 +87,7 @@ a.active, a:hover {
     transition: .5s;
 }
 .checkbtn {
-    font-size: 2em;
+    font-size: 60px;
     color: white;
     float: right;
     line-height: 8vh;
@@ -97,6 +97,184 @@ a.active, a:hover {
 }
 #check {
     display: none;
+}
+
+@media (max-width: 1065px) {
+    label .logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .partie1 {
+        height: 45vh !important;
+        /*align-items: start  !important;*/
+        
+    }
+    .partie1 img {
+        height: auto !important;
+        width: 50% !important;
+    }
+    .infoApp {
+        width: 40% !important;
+        justify-content: start !important;
+    
+    }
+    .txtpara {
+        font-size: 20px !important;
+    }
+
+    .partie2 {
+        height: 35vh !important;
+        padding-top: 0 !important;
+    }
+
+    .partie2 img {
+        width: 70%;
+        bottom: 25% !important;
+    }
+    .carre {
+        height: 30% !important;
+        width: 60%;
+        background-color: var(--bleu);
+        position: absolute;
+        bottom: 15% !important;
+        left: 5%;
+    }
+    .partie2 .partieTexte {
+        height: 100%;
+        width: 40%;
+        padding: 25px;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-around;
+    }
+
+    
+    .partie3 {
+        height: 45vh !important;
+    }
+
+
+    .titrePrincipal2 {
+
+        margin-left: 8% !important;
+        padding-top: 8vh !important;
+        width: 12% !important;
+
+    }
+    .box3D {
+        width: 40% !important;
+        display: flex;
+        align-items: end !important;
+        transform: translate(-50px, 70px) !important;
+        height: 80% !important;
+    }
+    
+    .listeParaP3 {
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 90%;
+        width: 30% !important;
+    }
+    .modele3d {
+       
+        width: 100% !important;
+    
+    }
+
+    .partie3 .barre {
+        bottom: -5px !important;
+    }
+    .partie3 .barre3 {
+
+        bottom: -5px !important;
+
+    }
+
+    footer {
+        height: 15vh !important;
+
+    }
+
+    .txtparaP3 {
+        margin-right: 5% !important;
+    }
+
+    footer .aPropos {
+        width: 40% !important;
+
+    }
+    footer .contact {
+        width: 40% !important;
+        
+    }
+
+    label.logo {
+        font-size: 48px;
+    }
+    .checkbtn {
+        display: block;
+        margin-left: 15px;
+        color: white;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--beige);
+        top: 8vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a  {
+        font-size: 20px;
+    }
+
+    a:hover, a:active {
+        background: none;
+        color: antiquewhite;
+
+    }
+
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .logodiv {
+        
+        flex-direction: row-reverse;
+    }
+    
+
+   
+}
+
+@media (max-width: 700px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 30px;
+
+    }
+
 }
 
 
@@ -112,7 +290,8 @@ a.active, a:hover {
 }
 .partie1 img {
     border-radius: 50%;
-    height: 90%;
+    height: 90%; 
+    
 }
 p.txtTtl {
     font-size: 26px;
@@ -182,6 +361,7 @@ p.txtTtl {
     background-color: white;
     position: relative;
 
+
 }
 .carre {
     height: 40%;
@@ -207,11 +387,7 @@ p.txtTtl {
     text-align: center;
     margin-right: 5%;
 }
-.souligne {
-    height: 3px;
-    width: 15px;
-    background-color: var(--beige);
-}
+
 
 .listeParaP2 {
     display: flex;
