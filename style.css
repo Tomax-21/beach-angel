@@ -172,8 +172,8 @@ a.active, a:hover {
         width: 40% !important;
         display: flex;
         align-items: end !important;
-        transform: translate(-50px, 70px) !important;
-        height: 80% !important;
+        transform: translate(-40%, 70px) !important;
+        height: 75% !important;
     }
     
     .listeParaP3 {
@@ -187,7 +187,7 @@ a.active, a:hover {
     }
     .modele3d {
        
-        width: 100% !important;
+        width: 140% !important;
     
     }
 
@@ -246,6 +246,7 @@ a.active, a:hover {
     }
     nav ul li a  {
         font-size: 42px;
+
     }
 
     a:hover, a:active {
@@ -507,14 +508,13 @@ footer .contact i {
 .modele3d {
     height: 450px;
     width: 700px;
-
-}
-
-.sketchfab-embed-wrapper {
     padding: 15px;
     background-color: var(--beige);
     border-radius: 15px;
+
 }
+
+
 
 .titrePrincipal2 {
     font-size: 38px;
