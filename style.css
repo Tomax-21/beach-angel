@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    --beige: #FFD6A5;
+    --bleu: #5C92D1;
+    --noir: #212120;
+
+    scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+  background: var(--bleu);
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  box-shadow:
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+  z-index: 10;
+}
+.listeBtn {
+    width: 70%;
+    text-align: right;
+}
+nav {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: var(--bleu);
+    height: 8;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+label.logo {
+    color: white;
+    font-size: 1.5em;
+    line-height: 8vh;
+    padding: 0 20px;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 8vh;
+    margin: 0 5px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size:  1.2em;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase; /* mettre en majuscule*/
+    font-weight: 500;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.logodiv img {
+    height: 6vh;
+    margin: 0.5vh 30px;
+}
+.logodiv {
+    display: flex;
+    flex-direction: row;
+}
+a.active, a:hover {
+    background: #2c3e50;
+    color: antiquewhite;
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 2em;
+    color: white;
+    float: right;
+    line-height: 8vh;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+@media (max-width: 1065px) {
+    label .logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .infoApp {
+        width: 100% !important;
+    
+    }
+    .paraP1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .paraP1 p {
+        margin:0 10px;
+    }
+
+    .partie2 {
+        display: none !important;
+
+    }
+    .partie3 {
+        display: none !important;
+    }
+    footer {
+        display: none !important;
+    }
+    .divCredit {
+        display: none ;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-left: 15px;
+        color: white;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--beige);
+        top: 8vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a  {
+        font-size: 20px;
+    }
+
+    a:hover, a:active {
+        background: none;
+        color: antiquewhite;
+
+    }
+
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .logodiv {
+        
+        flex-direction: row-reverse;
+    }
+    
+
+   
+}
+
+@media (max-width: 700px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 30px;
+
+    }
+
+}
+
+
+
+.partie1 {
+    padding-top: 10vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.partie1 img {
+    border-radius: 50%;
+    height: 90%;
+}
+p.txtTtl {
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--bleu);
+}
+.txtpara {
+    font-size: 18px;
+    text-align: justify;
+    color: #212120;
+}
+.infoApp {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.paraP1 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ttl {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.ttl .chiffre {
+    font-size: 36px;
+    font-weight: 600;
+    margin-right: 35px;
+    color: var(--beige);
+}
+.txtresume {
+    opacity: 0.7;
+    text-align: justify;
+    color: var(--noir);
+}
+
+
+
+.partie2 {
+    height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.partie2 img {
+    border-radius: 15px;
+    margin: 25px;
+    padding: 15px;
+    background-color: var(--beige);
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    z-index: 2;
+}
+
+.partie2 .partieImg {
+    
+    height: 100%;
+    width: 60%;
+    background-color: white;
+    position: relative;
+
+}
+.carre {
+    height: 40%;
+    width: 60%;
+    background-color: var(--bleu);
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+.partie2 .partieTexte {
+    height: 100%;
+    width: 40%;
+    padding: 25px;
+}
+.divImg {
+    background-color: var(--beige);
+
+}
+.titrePrincipal {
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--bleu);
+    text-align: center;
+    margin-right: 5%;
+}
+.souligne {
+    height: 3px;
+    width: 15px;
+    background-color: var(--beige);
+}
+
+.listeParaP2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+}
+
+
+.ttlP2 {
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--bleu);
+}
+.txtparaP2 {
+    font-size: 18px;
+    text-align: justify;
+    color: #212120;
+    margin-right: 15%;
+}
+
+.divttlP2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.numP2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-right: 35px;
+    color: var(--beige);
+}
+
+footer {
+    height: 20vh;
+    background-color: var(--bleu);
+    color: var(--beige);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer a {
+    text-decoration: none;
+    color: var(--beige);
+}
+footer .aPropos {
+    width: 30%;
+    height: 60%;
+    text-align: justify;
+}
+footer .contact {
+    width: 30%;
+    height: 60%;
+}
+footer .txtAPropos {
+    font-size: 16px;
+    
+}
+footer .ttlContact {
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+footer .contact i {
+    margin-right: 15px;
+}
+
+.btnA {
+    margin: 10px;
+}
+.divCredit {
+    background-color: var(--bleu);
+}
+.divCredit .credit {
+    opacity: 0.7;
+    color: white;
+    margin-left: 15px;
+}
+
+
+
+.partie3 .barre {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 64px;
+    background-color: var(--bleu);
+}
+.partie3 .barre2 {
+    width: 64px;
+    position: absolute;
+    left: 0;
+    top: 8vh;
+    height: 40%;
+    background-color: var(--bleu);
+
+}
+.partie3 .barre3 {
+    width: 256px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 256px;
+    background-color: var(--bleu);
+    z-index: -1;
+}
+.partie3 {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+}
+.modele3d {
+    height: 450px;
+    width: 700px;
+
+}
+
+.sketchfab-embed-wrapper {
+    padding: 15px;
+    background-color: var(--beige);
+    border-radius: 15px;
+}
+
+.titrePrincipal2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--bleu);
+    text-align: center;
+    margin-right: 5%;
+    padding-top: 10vh;
+    width: 20%;
+}
+.box3D {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.listeParaP3 {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 30%;
+}
+
+
+.ttlP3 {
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--bleu);
+}
+.txtparaP3 {
+    font-size: 18px;
+    text-align: justify;
+    color: #212120;
+    margin-right: 15%;
+}
+
+.divttlP3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.numP3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-right: 35px;
+    color: var(--beige);
+}
