@@ -15,7 +15,12 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-
+/*
+.imageHeader {
+    height: 35px;
+    width: 100%;
+    position: relative;
+}*/
 .navMenu {
   background: var(--bleu);
   width: 100%;
@@ -23,11 +28,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: static;
   box-shadow:
   12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
   100px 100px 80px rgba(0, 0, 0, 0.07);
   z-index: 10;
+
 }
 .listeBtn {
     width: 70%;
@@ -82,8 +88,8 @@ nav ul li a {
     flex-direction: row;
 }
 a.active, a:hover {
-    background: #2c3e50;
-    color: antiquewhite;
+    background: var(--beige);
+    color: var(--bleu);
     transition: .5s;
 }
 .checkbtn {
@@ -295,17 +301,20 @@ a.active, a:hover {
 .partie1 img {
     border-radius: 50%;
     height: 90%; 
+    animation: spawnImgP1 1s;
     
 }
 p.txtTtl {
     font-size: 26px;
     font-weight: 500;
     color: var(--bleu);
+
 }
 .txtpara {
     font-size: 18px;
     text-align: justify;
     color: #212120;
+    animation: spawnTextP1 .7s;
 }
 .infoApp {
     height: 100%;
@@ -313,6 +322,7 @@ p.txtTtl {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
 }
 .paraP1 {
     height: 80%;
@@ -337,7 +347,9 @@ p.txtTtl {
     text-align: justify;
     color: var(--noir);
 }
-
+.titre1 {
+    animation: spawnTtlP1 .7s;
+}
 
 
 .partie2 {
@@ -379,6 +391,7 @@ p.txtTtl {
     height: 100%;
     width: 40%;
     padding: 25px;
+    
 }
 .divImg {
     background-color: var(--beige);
@@ -411,6 +424,12 @@ p.txtTtl {
     text-align: justify;
     color: #212120;
     margin-right: 15%;
+    animation: spawnTextP2 .7s;
+
+}
+.titre2 {
+    animation: spawnTextP2 .7s;
+
 }
 
 .divttlP2 {
@@ -557,6 +576,8 @@ footer .contact i {
     text-align: justify;
     color: #212120;
     margin-right: 15%;
+    animation: spawnTextP2 .7s;
+
 }
 
 .divttlP3 {
@@ -569,4 +590,36 @@ footer .contact i {
     font-weight: 600;
     margin-right: 35px;
     color: var(--beige);
+}
+
+
+
+@keyframes spawnTextP1 {
+    from {
+        transform: translateX(-1500px);
+    } to {
+        transform: translate(0);
+    }
+}
+@keyframes spawnImgP1 {
+    from {
+        transform: scale(0);
+    } to {
+        transform: scale(1);
+    }
+}
+@keyframes spawnTtlP1 {
+    from {
+        transform: translateY(-1500px);
+    } to {
+        transform: translate(0);
+    }
+}
+
+@keyframes spawnTextP2 {
+    from {
+        transform: translateX(1500px);
+    } to {
+        transform: translate(0);
+    }
 }
